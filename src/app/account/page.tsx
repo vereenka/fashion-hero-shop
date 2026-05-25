@@ -94,6 +94,27 @@ export default function AccountPage() {
         </div>
       </section>
 
+      {/* Seller Dashboard */}
+      <section className="mb-10">
+        <h2 className="text-[12px] font-medium uppercase tracking-[0.8px] text-charcoal mb-4 pb-2 border-b border-black/10">
+          Seller Dashboard
+        </h2>
+        <Link
+          href="/seller/profile"
+          className="flex items-center justify-between py-3 border-b border-black/5 group"
+        >
+          <div>
+            <p className="text-[13px] font-medium text-charcoal">Profil operacyjny</p>
+            <p className="text-[12px] text-warm-gray">
+              Twoje wskaźniki vs benchmark kategorii
+            </p>
+          </div>
+          <span className="text-warm-gray group-hover:text-charcoal transition-colors text-sm">
+            →
+          </span>
+        </Link>
+      </section>
+
       <button
         onClick={() => {
           logout();
